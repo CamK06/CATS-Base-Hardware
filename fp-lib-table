@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "RF4463")(type "Eagle")(uri "${KIPRJMOD}/kicad-lib/npr70.lbr")(options "")(descr ""))
+)
