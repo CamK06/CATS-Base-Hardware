@@ -1759,11 +1759,11 @@
         )
       )
     )
-    (symbol "power:VBUS" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+    (symbol "power:VCC" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Value" "VBUS" (at 0 3.81 0)
+      (property "Value" "VCC" (at 0 3.81 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (at 0 0 0)
@@ -1775,10 +1775,10 @@
       (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Power symbol creates a global label with name \"VBUS\"" (at 0 0 0)
+      (property "ki_description" "Power symbol creates a global label with name \"VCC\"" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "VBUS_0_1"
+      (symbol "VCC_0_1"
         (polyline
           (pts
             (xy -0.762 1.27)
@@ -1804,9 +1804,9 @@
           (fill (type none))
         )
       )
-      (symbol "VBUS_1_1"
+      (symbol "VCC_1_1"
         (pin power_in line (at 0 0 90) (length 0) hide
-          (name "VBUS" (effects (font (size 1.27 1.27))))
+          (name "VCC" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
       )
@@ -2441,6 +2441,10 @@
   (wire (pts (xy 29.21 99.06) (xy 30.48 99.06))
     (stroke (width 0) (type default))
     (uuid 88e2d49f-8f29-43c0-9c00-ff0c6e92c495)
+  )
+  (wire (pts (xy 114.3 41.91) (xy 114.3 43.18))
+    (stroke (width 0) (type default))
+    (uuid 8c5e4cdf-e5fd-475a-ad8e-d0ce71fa9be6)
   )
   (wire (pts (xy 105.41 134.62) (xy 106.68 134.62))
     (stroke (width 0) (type default))
@@ -3464,36 +3468,6 @@
     )
   )
 
-  (symbol (lib_id "power:VBUS") (at 114.3 43.18 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 165fdc49-869e-4fdd-b94a-1de11b6d7911)
-    (property "Reference" "#PWR012" (at 118.11 43.18 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "VBUS" (at 111.76 43.18 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 114.3 43.18 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 114.3 43.18 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 67ad946d-62b0-4b53-ad5c-0a06e03ce7c8))
-    (instances
-      (project "PicoBeacon"
-        (path "/333f25f5-6213-47ae-8f1d-b78c72445652"
-          (reference "#PWR012") (unit 1)
-        )
-      )
-      (project "CATSTNC-R2"
-        (path "/4d2f18f9-1900-482a-878f-1242278d07b9"
-          (reference "#PWR033") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:GND") (at 88.9 39.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 17179ec6-d99b-44d3-9dc7-29437b6f3eb0)
@@ -3781,6 +3755,31 @@
       (project "CATSTNC-R2"
         (path "/4d2f18f9-1900-482a-878f-1242278d07b9"
           (reference "R10") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:VCC") (at 114.3 41.91 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 334e76e4-d8a4-4450-8e31-757f85e5e33c)
+    (property "Reference" "#PWR033" (at 114.3 45.72 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VCC" (at 114.3 38.1 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 114.3 41.91 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 114.3 41.91 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 49f2aaf1-722c-4e24-a814-1f26ec367126))
+    (instances
+      (project "CATSTNC-R2"
+        (path "/4d2f18f9-1900-482a-878f-1242278d07b9"
+          (reference "#PWR033") (unit 1)
         )
       )
     )
@@ -4642,6 +4641,31 @@
     )
   )
 
+  (symbol (lib_id "power:VCC") (at 34.29 31.75 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 75d8f666-a98c-4053-9afa-dc821f5db92b)
+    (property "Reference" "#PWR019" (at 34.29 35.56 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VCC" (at 34.29 27.94 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 34.29 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 34.29 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid cec342d5-6eaa-4031-8ec2-af50edf368ea))
+    (instances
+      (project "CATSTNC-R2"
+        (path "/4d2f18f9-1900-482a-878f-1242278d07b9"
+          (reference "#PWR019") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 115.57 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 770b6df2-8328-4076-a0a0-5d90179ebe6c)
@@ -5371,31 +5395,6 @@
       (project "CATSTNC-R2"
         (path "/4d2f18f9-1900-482a-878f-1242278d07b9"
           (reference "R12") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:VBUS") (at 34.29 31.75 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid c1759ed5-9b78-4306-9ac1-9ced999f68e9)
-    (property "Reference" "#PWR019" (at 34.29 35.56 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "VBUS" (at 34.29 27.94 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 34.29 31.75 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 34.29 31.75 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid c484612b-2919-4775-a1c2-273b302948cc))
-    (instances
-      (project "CATSTNC-R2"
-        (path "/4d2f18f9-1900-482a-878f-1242278d07b9"
-          (reference "#PWR019") (unit 1)
         )
       )
     )
