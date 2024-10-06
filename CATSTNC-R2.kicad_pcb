@@ -23160,7 +23160,7 @@
 		)
 	)
 	(gr_text "BOOT"
-		(at 132 81.5 0)
+		(at 132.353333 81.5 0)
 		(layer "F.SilkS")
 		(uuid "ac7dd266-f156-4066-b60c-5cfd24f608ab")
 		(effects
